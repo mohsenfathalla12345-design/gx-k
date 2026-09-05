@@ -21,7 +21,7 @@ jobs:
         run: flutter config --enable-windows-desktop
 
       - name: Create Windows Files
-        run: flutter create --platforms=windows . --force
+        run: flutter create --platforms=windows .
 
       - name: Get Dependencies
         run: flutter pub get
