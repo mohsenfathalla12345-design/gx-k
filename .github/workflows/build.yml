@@ -15,13 +15,13 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          channel: 'stable'
+          channel: 'master'
 
       - name: Enable Windows
         run: flutter config --enable-windows-desktop
 
-      - name: Create Windows
-        run: flutter create --platforms=windows .
+      - name: Create Windows Files
+        run: flutter create --platforms=windows . --force
 
       - name: Get Dependencies
         run: flutter pub get
