@@ -1,5 +1,4 @@
-
-     name: Build Windows App
+name: Build Windows App
 
 on:
   push:
@@ -21,8 +20,8 @@ jobs:
       - name: Enable Windows
         run: flutter config --enable-windows-desktop
 
-      - name: Create Windows Files
-        run: flutter create . --platforms=windows
+      - name: Create Windows
+        run: flutter create --platforms=windows .
 
       - name: Get Dependencies
         run: flutter pub get
